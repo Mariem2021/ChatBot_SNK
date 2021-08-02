@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div class="h-container">
+            <div class="h-header">
+                <div class="h-old-response">
+                    <p id="old-response" class="btn"></p>
+                </div>
+            </div>
+
+            <div class="h-content">
+                <div class="h-image">
+                    <img src="images/logo_SparkNumeric_best_2.png" alt="covid-19">
+                </div>
+                <div class="h-form" id="q1">
+                    <div class="h-form-content">
+                        <label for="">Question</label>
+                        <!-- <input type="text"> -->
+                        <div class="h-response">
+                            <button id="response" class="btn" (click)="addResponse('q1', $event)">Mild</button>
+                            <button id="response" class="btn" (click)="addResponse('q1', $event)">Moderate</button>
+                            <button id="response" class="btn" (click)="addResponse('q1', $event)">Sevete</button>
+                            <button id="response" class="btn" (click)="addResponse('q1', $event)">I don't know</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-footer">
+                <h2>SPARK NUMERIC</h2>
+            </div>
+        </div>
+
+        <!-- <div id="output"></div>
+        
+        <div id="container">
+            <input type="text" id="input" value="">
+        </div> -->
+
+        <script src="chatpot.js"></script>
+
+        <!-- jquery for enter key press -->      
+        <!-- <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script> -->
+    </body>
+</html>
